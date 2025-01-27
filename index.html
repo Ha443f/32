@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرصة عمل ممتازة</title>
+    <title>فرصة عمل مميزة</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11561387162"></script>
@@ -14,7 +14,7 @@
         gtag('config', 'AW-11561387162');
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -32,165 +32,58 @@
         }
 
         h1 {
-            font-size: 6vw;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        p {
-            font-size: 4vw;
-            margin: 10px 20px;
+            font-size: 8vw;
+            margin-bottom: 20px;
+            color: #222;
         }
 
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
-            font-size: 5vw;
+            font-size: 6vw;
             color: white;
             background-color: #25D366;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease-in-out, transform 0.2s ease;
-            animation: pulse 1.5s infinite;
-            margin: 10px 0;
+            animation: bounce 1.5s infinite;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .cta-button:hover {
             background-color: #128C7E;
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
-        .cta-button:active {
-            transform: scale(0.95);
-        }
-
-        .cta-button span {
-            margin-left: 10px;
-            font-size: 6vw;
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         footer {
-            margin-top: 20px;
-            font-size: 3vw;
-            color: #666;
-        }
-
-        .accordion {
-            max-width: 600px;
-            margin-top: 20px;
-            text-align: left;
-            font-size: 3vw;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .accordion h2 {
+            margin-top: 30px;
             font-size: 4vw;
-            background-color: #f3f3f3;
-            margin: 0;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-
-        .accordion p, .accordion ul {
-            margin: 0;
-            padding: 15px;
-            display: none;
-            background-color: white;
-        }
-
-        .accordion.active p, .accordion.active ul {
-            display: block;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 8vw;
-            }
-
-            p {
-                font-size: 5vw;
-            }
-
-            .cta-button {
-                font-size: 6vw;
-                padding: 12px 30px;
-            }
-
-            footer {
-                font-size: 4vw;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 10vw;
-            }
-
-            p {
-                font-size: 6vw;
-            }
-
-            .cta-button {
-                font-size: 7vw;
-                padding: 10px 20px;
-            }
-
-            footer {
-                font-size: 5vw;
-            }
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <!-- عنوان -->
-    <h1>فرصة عمل ممتازة!</h1>
+    <h1>فرصة عمل مميزة!</h1>
 
-    <!-- وصف قصير -->
-    <p>انضم إلينا الآن للحصول على فرصة عمل رائعة تساعدك في تحقيق أهدافك المهنية. لمزيد من التفاصيل، تواصل معنا عبر الواتساب!</p>
-
-    <!-- زر رابط مجموعة الواتساب -->
     <a class="cta-button"
        href="https://chat.whatsapp.com/Ea7m9nt4cKK3YP4KnSQYy0"
        target="_blank"
        onclick="gtag('event', 'conversion', {'send_to': 'AW-11561387162/YYYYY'});">
-        <span>👥</span> انضم إلى المجموعة
+        تواصل معنا الآن
     </a>
 
-    <!-- سياسة الخصوصية والنصائح -->
-    <div class="accordion" onclick="this.classList.toggle('active')">
-        <h2>سياسة الخصوصية وشروط الاستخدام</h2>
-        <p>نحن نحترم خصوصيتك. يتم جمع بياناتك فقط لتحسين تجربتك ولتقديم الخدمة المطلوبة. من خلال الانضمام إلى المجموعة، فإنك توافق على التواصل معنا لأغراض تتعلق بفرصة العمل.</p>
-        <ul>
-            <li>هذه الصفحة مخصصة لتوفير معلومات دقيقة حول فرصة العمل.</li>
-            <li>لا توجد أي رسوم مخفية أو التزامات مالية دون إشعار مسبق.</li>
-            <li>المجموعة مخصصة للنقاشات المتعلقة بالفرصة فقط.</li>
-        </ul>
-        <p>يرجى التأكد من أن جميع المعلومات المعروضة صحيحة وتجنب مشاركة معلومات حساسة عبر المنصات العامة.</p>
-    </div>
+    <footer>© 2025 - جميع الحقوق محفوظة</footer>
 
-    <!-- نص صغير في الأسفل -->
-    <footer>جميع الحقوق محفوظة © 2025 - هذه الصفحة تهدف لتوفير معلومات حول فرصة العمل.</footer>
-
-    <script>
-        document.querySelectorAll('.accordion').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('active');
-            });
-        });
-    </script>
 </body>
 </html>
