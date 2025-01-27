@@ -22,86 +22,126 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-        }
-
-        .container {
-            text-align: center;
-            direction: rtl;
-            color: #333;
-            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            cursor: pointer;
-            padding: 20px;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #333;
         }
 
         h1 {
-            color: #333;
             font-size: 6vw;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-weight: 700;
+        }
+
+        p {
+            font-size: 4vw;
+            margin: 10px 20px;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 15px 40px;
             font-size: 5vw;
             color: white;
             background-color: #25D366;
             text-decoration: none;
             border-radius: 50px;
-            transition: 0.3s ease-in-out;
             font-weight: bold;
-            box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+            animation: pulse 1.5s infinite;
         }
 
         .cta-button:hover {
             background-color: #128C7E;
+            transform: scale(1.05);
         }
 
         .cta-button:active {
-            transform: scale(0.95); /* تصغير حجم الزر عند الضغط */
+            transform: scale(0.95);
         }
 
         .cta-button span {
-            margin-right: 10px;
+            margin-left: 10px;
+            font-size: 6vw;
         }
 
-        p {
-            font-size: 5vw;
+        footer {
             margin-top: 20px;
+            font-size: 3vw;
+            color: #666;
         }
 
-        .whatsapp-icon {
-            font-size: 4vw;
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 8vw;
+            }
+
+            p {
+                font-size: 5vw;
+            }
+
+            .cta-button {
+                font-size: 6vw;
+                padding: 12px 30px;
+            }
+
+            footer {
+                font-size: 4vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 10vw;
+            }
+
+            p {
+                font-size: 6vw;
+            }
+
+            .cta-button {
+                font-size: 7vw;
+                padding: 10px 20px;
+            }
+
+            footer {
+                font-size: 5vw;
+            }
         }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/0771365200?text=🔵%20أريد%20مزيد%20من%20المعلومات!" style="text-decoration: none; color: inherit;">
-        <div class="container">
+    <!-- عنوان -->
+    <h1>فرصة عمل ممتازة!</h1>
 
-            <!-- Heading without the icon -->
-            <h1>فرصة عمل ممتازة!</h1>
+    <!-- وصف قصير -->
+    <p>انضم إلينا الآن للحصول على فرصة عمل رائعة تساعدك في تحقيق أهدافك المهنية. لمزيد من التفاصيل، تواصل معنا عبر الواتساب!</p>
 
-            <!-- Call-to-action button with WhatsApp icon -->
-            <div class="cta-button">
-                <span class="whatsapp-icon">📲</span> اضغط هنا للتواصل فورًا
-            </div>
-
-            <p>
-                <span>📞</span> اضغط في أي مكان لفتح الواتساب!
-            </p>
-
-        </div>
+    <!-- زر واتساب -->
+    <a class="cta-button"
+       href="https://wa.me/0771365200?text=🔵%20أريد%20مزيد%20من%20المعلومات!"
+       target="_blank"
+       onclick="gtag('event', 'conversion', {'send_to': 'AW-11561387162/XXXXX'});">
+        <span>📲</span> تواصل معنا الآن
     </a>
+
+    <!-- نص صغير في الأسفل -->
+    <footer>جميع الحقوق محفوظة © 2025 - هذه الصفحة تهدف لتوفير معلومات حول فرصة العمل.</footer>
 
 </body>
 </html>
