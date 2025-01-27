@@ -77,6 +77,35 @@
             color: #666;
         }
 
+        .accordion {
+            max-width: 600px;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 3vw;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion h2 {
+            font-size: 4vw;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .accordion p, .accordion ul {
+            margin: 0;
+            padding: 15px;
+            display: none;
+            background-color: white;
+        }
+
+        .accordion.active p, .accordion.active ul {
+            display: block;
+        }
+
         @keyframes pulse {
             0%, 100% {
                 transform: scale(1);
@@ -142,23 +171,26 @@
     </a>
 
     <!-- سياسة الخصوصية والنصائح -->
-    <section style="margin-top: 20px; font-size: 3vw; text-align: left; max-width: 600px;">
-        <h2 style="font-size: 4vw;">سياسة الخصوصية</h2>
+    <div class="accordion" onclick="this.classList.toggle('active')">
+        <h2>سياسة الخصوصية وشروط الاستخدام</h2>
         <p>نحن نحترم خصوصيتك. يتم جمع بياناتك فقط لتحسين تجربتك ولتقديم الخدمة المطلوبة. من خلال الانضمام إلى المجموعة، فإنك توافق على التواصل معنا لأغراض تتعلق بفرصة العمل.</p>
-
-        <h2 style="font-size: 4vw;">شروط استخدام الصفحة</h2>
         <ul>
             <li>هذه الصفحة مخصصة لتوفير معلومات دقيقة حول فرصة العمل.</li>
             <li>لا توجد أي رسوم مخفية أو التزامات مالية دون إشعار مسبق.</li>
             <li>المجموعة مخصصة للنقاشات المتعلقة بالفرصة فقط.</li>
         </ul>
-
-        <h2 style="font-size: 4vw;">تحذير</h2>
         <p>يرجى التأكد من أن جميع المعلومات المعروضة صحيحة وتجنب مشاركة معلومات حساسة عبر المنصات العامة.</p>
-    </section>
+    </div>
 
     <!-- نص صغير في الأسفل -->
     <footer>جميع الحقوق محفوظة © 2025 - هذه الصفحة تهدف لتوفير معلومات حول فرصة العمل.</footer>
 
+    <script>
+        document.querySelectorAll('.accordion').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
